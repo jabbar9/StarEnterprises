@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title id="product-title">Natural Loofah - Product Details | Star Enterprises</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="ProductCatalog.html">
+<link rel="stylesheet" href="Home.html">
+<link rel="stylesheet" href="ContactUs.html">
+<link rel="stylesheet" href="AboutUs.html">
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#137fec",
+                    "background-light": "#f6f7f8",
+                    "background-dark": "#101922",
+                },
+                fontFamily: {
+                    "display": ["Inter", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+        },
+    }
+</script>
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-white overflow-x-hidden antialiased">
+<header class="sticky top-0 z-50 w-full border-b border-[#e7edf3] dark:border-slate-700 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#0d141b] dark:text-white">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">star</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Star Enterprises</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="Home.html">Home</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="ProductCatalog.html">Catalog</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="ContactUs.html">Contact Us</a>
+<a class="text-[#0d141b] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors" href="AboutUs.html">About Us</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 md:gap-8 items-center">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full ring-1 ring-[#cfdbe7] dark:ring-slate-600 focus-within:ring-primary overflow-hidden bg-white dark:bg-slate-800">
+<div class="text-[#4c739a] flex items-center justify-center pl-3 pr-1">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full min-w-0 flex-1 resize-none bg-transparent border-none focus:outline-0 focus:ring-0 text-[#0d141b] dark:text-white placeholder:text-[#4c739a] px-2 text-sm" placeholder="Search catalog..."/>
+</div>
+</label>
+<button class="flex items-center justify-center rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold shadow-sm hover:bg-blue-600 transition-colors">
+<a href="ContactUs.html">
+<span>Contact Us</span>
+</a>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center w-full min-h-screen pb-20">
+<div class="w-full max-w-[1280px] px-4 md:px-8 flex flex-col">
+<div class="flex flex-wrap gap-2 py-6 text-sm">
+<a class="text-[#4c739a] font-medium hover:text-primary transition-colors" href="Home.html">Home</a>
+<span class="text-[#4c739a] font-medium">/</span>
+<a class="text-[#4c739a] font-medium hover:text-primary transition-colors" href="ProductCatalog.html">Catalog</a>
+<span class="text-[#4c739a] font-medium">/</span>
+<a class="text-[#4c739a] font-medium hover:text-primary transition-colors" href="ProductCatalog.html">Bath & Spa</a>
+<span class="text-[#4c739a] font-medium">/</span>
+<span id="breadcrumb-product" class="text-[#0d141b] dark:text-white font-medium">Natural Loofah</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="w-full aspect-[4/3] bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-[#e7edf3] dark:border-slate-700 relative group">
+<div id="main-image" class="absolute inset-0 bg-center bg-contain bg-no-repeat transition-transform duration-500 group-hover:scale-105" data-alt="Natural loofah for spa and salon use" style="background-image: url('./002/Natural Loofah.png')"></div>
+<div class="absolute top-4 right-4 bg-white dark:bg-slate-900 rounded-full p-2 shadow-md cursor-pointer hover:text-primary text-slate-400">
+<span class="material-symbols-outlined block">favorite</span>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-4">
+<div class="aspect-square bg-white dark:bg-slate-800 rounded-lg overflow-hidden border-2 border-primary cursor-pointer">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat" data-alt="Natural loofah close-up texture" style="background-image: url('./002/Natural Loofah.png')"></div>
+</div>
+<div class="aspect-square bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-[#e7edf3] dark:border-slate-700 hover:border-primary cursor-pointer transition-colors">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat opacity-80 hover:opacity-100 transition-opacity" data-alt="Loofah in spa setting" style="background-image: url('./002/Natural Loofah.png')"></div>
+</div>
+<div class="aspect-square bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-[#e7edf3] dark:border-slate-700 hover:border-primary cursor-pointer transition-colors">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat opacity-80 hover:opacity-100 transition-opacity" data-alt="Natural loofah bundle" style="background-image: url('./002/Natural Loofah.png')"></div>
+</div>
+<div class="aspect-square bg-white dark:bg-slate-800 rounded-lg overflow-hidden border border-[#e7edf3] dark:border-slate-700 hover:border-primary cursor-pointer transition-colors flex items-center justify-center text-primary bg-primary/5">
+<span class="text-sm font-semibold">+3 More</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col">
+<div class="sticky top-24 flex flex-col gap-6">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span id="product-badge" class="bg-green-600 text-white px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider">Best Seller</span>
+<span id="product-sku" class="text-[#4c739a] text-xs font-medium uppercase tracking-wider">SKU: LOOF-100-NAT</span>
+</div>
+<h1 id="product-name" class="text-[#0d141b] dark:text-white text-3xl md:text-4xl font-bold leading-tight mb-4">Natural Loofah - Professional Grade</h1>
+<div class="flex items-center gap-2 cursor-pointer group">
+<div class="flex text-[#F59E0B]">
+<span class="material-symbols-outlined text-[20px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-current" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="text-[#0d141b] dark:text-gray-300 text-sm font-medium underline decoration-slate-300 group-hover:text-primary group-hover:decoration-primary transition-colors">5.0 (89 reviews)</span>
+</div>
+</div>
+<hr class="border-[#e7edf3] dark:border-slate-700"/>
+<div class="space-y-6">
+<p id="product-description" class="text-[#4c739a] dark:text-slate-400 text-base leading-relaxed">
+Premium 100% natural loofah made from dried luffa plants. Perfect for salons, spas, and professional beauty treatments. Provides excellent exfoliation, improves circulation, and is completely biodegradable. Each loofah is carefully selected for optimal texture and durability.
+</p>
+<div id="product-specs" class="grid grid-cols-2 gap-y-4 gap-x-2">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-[#4c739a]">Material</span>
+<span class="text-sm font-semibold dark:text-white">100% Natural Luffa</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">recycling</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-[#4c739a]">Eco-Friendly</span>
+<span class="text-sm font-semibold dark:text-white">Biodegradable</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">straighten</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-[#4c739a">Size</span>
+<span class="text-sm font-semibold dark:text-white">8-10 inches</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="text-xs text-[#4c739a]">Quality</span>
+<span class="text-sm font-semibold dark:text-white">Professional Grade</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 mt-4">
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-blue-600 text-white font-bold text-base shadow-md transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">description</span>
+Download Product Sheet
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- <div class="w-full mb-12">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-bold text-[#0d141b] dark:text-white">Related Products</h3>
+<a class="text-primary text-sm font-semibold flex items-center gap-1 hover:underline" href="ProductCatalog.html">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
+<div class="aspect-square w-full bg-[#f6f7f8] dark:bg-slate-900 bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Natural Loofah" style="background-image: url('./002/001 (2).JPG');">
+</div>
+<div class="p-4 flex flex-col gap-2">
+<span class="text-xs text-[#4c739a] font-medium">Loofah</span>
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm leading-tight">Loofah - 001</h4>
+<div class="mt-2 flex items-center justify-between">
+<span class="text-xs font-medium bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded">View Details</span>
+<button class="text-primary hover:bg-primary/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
+<div class="aspect-square w-full bg-[#f6f7f8] dark:bg-slate-900 bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Round Loofah" style="background-image: url('./002/Round loofah004.jpg');">
+</div>
+<div class="p-4 flex flex-col gap-2">
+<span class="text-xs text-[#4c739a] font-medium">Loofah</span>
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm leading-tight">Round Loofah</h4>
+<div class="mt-2 flex items-center justify-between">
+<span class="text-xs font-medium bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded">View Details</span>
+<button class="text-primary hover:bg-primary/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
+<div class="aspect-square w-full bg-[#f6f7f8] dark:bg-slate-900 bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="White Loofah" style="background-image: url('./002/white loofah.jpg');">
+</div>
+<div class="p-4 flex flex-col gap-2">
+<span class="text-xs text-[#4c739a] font-medium">Loofah</span>
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm leading-tight">White Loofah</h4>
+<div class="mt-2 flex items-center justify-between">
+<span class="text-xs font-medium bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded">View Details</span>
+<button class="text-primary hover:bg-primary/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-white dark:bg-slate-800 rounded-xl border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-lg transition-shadow">
+<div class="aspect-square w-full bg-[#f6f7f8] dark:bg-slate-900 bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Spa Slippers" style="background-image: url('./002/terry slipper.jpg');">
+</div>
+<div class="p-4 flex flex-col gap-2">
+<span class="text-xs text-[#4c739a] font-medium">Footwear</span>
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm leading-tight">Terry Slipper</h4>
+<div class="mt-2 flex items-center justify-between">
+<span class="text-xs font-medium bg-gray-100 dark:bg-slate-700 px-2 py-1 rounded">View Details</span>
+<button class="text-primary hover:bg-primary/10 rounded-full p-1 transition-colors">
+<span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+</div>
+</main>
+<footer class="bg-white dark:bg-slate-900 border-t border-[#e7edf3] dark:border-slate-700 w-full py-12">
+<div class="max-w-[1280px] mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-[#0d141b] dark:text-white">
+<div class="size-6 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined">star</span>
+</div>
+<h2 class="text-base font-bold">Star Enterprises</h2>
+</div>
+<p class="text-[#4c739a] text-sm">Premium bath, spa, and beauty products for professionals and businesses.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-[#0d141b] dark:text-white mb-2">Categories</h3>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="ProductCatalog.html">Loofahs</a>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="ProductCatalog.html">Spa Wear</a>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="ProductCatalog.html">Bath Essentials</a>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-[#0d141b] dark:text-white mb-2">Resources</h3>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="#">Product Sheets</a>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="#">Warranty Info</a>
+<a class="text-[#4c739a] hover:text-primary text-sm" href="ContactUs.html">Contact Us</a>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-[#0d141b] dark:text-white mb-2">Connect</h3>
+<div class="flex gap-4">
+<a class="text-[#4c739a] hover:text-primary" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-[#4c739a] hover:text-primary" href="#">
+<span class="material-symbols-outlined">rss_feed</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-[#e7edf3] dark:border-slate-800 mt-12 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-sm text-[#4c739a]">
+<p>© 2024 Star Enterprises Inc. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- Product Data - This section contains data for all 23 products -->
+<script>
+// Product database with all 23 products
+const products = {
+    'natural-loofah': {
+        id: 'natural-loofah',
+        name: 'Natural Loofah - Professional Grade',
+        title: 'Natural Loofah - Product Details | Star Enterprises',
+        sku: 'LOOF-100-NAT',
+        badge: 'Best Seller',
+        badgeColor: 'bg-green-600',
+        description: 'Premium 100% natural loofah made from dried luffa plants. Perfect for salons, spas, and professional beauty treatments. Provides excellent exfoliation, improves circulation, and is completely biodegradable. Each loofah is carefully selected for optimal texture and durability.',
+        mainImage: './002/Natural Loofah.png',
+        thumbImages: [
+            './002/IMG_9490.JPG',
+            './002/IMG_9500.JPG',
+            './002/IMG_9501.JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Material', value: '100% Natural Luffa' },
+            { icon: 'recycling', label: 'Eco-Friendly', value: 'Biodegradable' },
+            { icon: 'straighten', label: 'Size', value: '8-10 inches' },
+            { icon: 'verified', label: 'Quality', value: 'Professional Grade' }
+        ],
+        rating: 5.0,
+        reviews: 89
+    },
+    'loofah-001': {
+        id: 'loofah-001',
+        name: 'Loofah - 001',
+        title: 'Loofah 001 - Product Details | Star Enterprises',
+        sku: 'LOOF-101',
+        badge: 'Standard',
+        badgeColor: 'bg-blue-600',
+        description: 'High-quality natural loofah with medium texture, perfect for daily exfoliation and spa treatments. This loofah variant offers balanced abrasiveness for effective skin cleansing without being too harsh on sensitive skin.',
+        mainImage: './002/001 (2).JPG',
+        thumbImages: [
+            './002/001 (2).JPG',
+            './002/001.JPG',
+            './002/001 (3).JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Texture', value: 'Medium Grit' },
+            { icon: 'water_drop', label: 'Absorbency', value: 'High' },
+            { icon: 'straighten', label: 'Length', value: '9 inches' },
+            { icon: 'verified', label: 'Durability', value: 'Excellent' }
+        ],
+        rating: 4.7,
+        reviews: 56
+    },
+    'loofah-002': {
+        id: 'loofah-002',
+        name: 'Loofah - 002',
+        title: 'Loofah 002 - Product Details | Star Enterprises',
+        sku: 'LOOF-102',
+        badge: 'Popular',
+        badgeColor: 'bg-purple-600',
+        description: 'Firm texture loofah designed for deep exfoliation and therapeutic massage. Ideal for professional spa treatments and individuals seeking thorough skin cleansing and circulation improvement.',
+        mainImage: './002/002.JPG',
+        thumbImages: [
+            './002/002.JPG',
+            './002/IMG_9368.JPG',
+            './002/002.JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Texture', value: 'Firm Grit' },
+            { icon: 'fitness_center', label: 'Massage Use', value: 'Therapeutic' },
+            { icon: 'straighten', label: 'Size', value: '8.5 inches' },
+            { icon: 'verified', label: 'Professional Use', value: 'Yes' }
+        ],
+        rating: 4.8,
+        reviews: 72
+    },
+    'loofah-003': {
+        id: 'loofah-003',
+        name: 'Loofah - 003',
+        title: 'Loofah 003 - Product Details | Star Enterprises',
+        sku: 'LOOF-103',
+        badge: 'New',
+        badgeColor: 'bg-blue-600',
+        description: 'Gentle textured loofah perfect for sensitive skin types. Provides mild exfoliation while being soft enough for daily use, making it ideal for facial treatments and delicate skin areas.',
+        mainImage: './002/003.JPG',
+        thumbImages: [
+            './002/003.JPG',
+            './002/IMG_9477.JPG',
+            './002/003.JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Texture', value: 'Soft Grit' },
+            { icon: 'sentiment_satisfied', label: 'Skin Type', value: 'Sensitive' },
+            { icon: 'straighten', label: 'Length', value: '7.5 inches' },
+            { icon: 'verified', label: 'Facial Safe', value: 'Yes' }
+        ],
+        rating: 4.9,
+        reviews: 45
+    },
+    'loofah-004': {
+        id: 'loofah-004',
+        name: 'Loofah - 004',
+        title: 'Loofah 004 - Product Details | Star Enterprises',
+        sku: 'LOOF-104',
+        badge: 'Standard',
+        badgeColor: 'bg-blue-600',
+        description: 'Versatile medium-texture loofah suitable for both body and facial applications. This all-purpose loofah is perfect for salons offering multiple treatment types with one reliable product.',
+        mainImage: './002/004 (3).JPG',
+        thumbImages: [
+            './002/004 (3).JPG',
+            './002/004 (2).JPG',
+            './002/004.JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Versatility', value: 'Multi-Purpose' },
+            { icon: 'diversity_3', label: 'Applications', value: 'Body & Face' },
+            { icon: 'straighten', label: 'Size', value: '8 inches' },
+            { icon: 'verified', label: 'Salon Grade', value: 'Yes' }
+        ],
+        rating: 4.6,
+        reviews: 38
+    },
+    'loofah-005': {
+        id: 'loofah-005',
+        name: 'Loofah - 005',
+        title: 'Loofah 005 - Product Details | Star Enterprises',
+        sku: 'LOOF-105',
+        badge: 'Premium',
+        badgeColor: 'bg-amber-600',
+        description: 'Extra-long loofah designed for back exfoliation and hard-to-reach areas. Perfect for self-massage and comprehensive body treatments in professional spa settings.',
+        mainImage: './002/005 (2).JPG',
+        thumbImages: [
+            './002/005 (2).JPG',
+            './002/005.JPG',
+            './002/005 (2).JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Special Feature', value: 'Extra Length' },
+            { icon: 'accessibility', label: 'Self-Use', value: 'Easy Reach' },
+            { icon: 'straighten', label: 'Length', value: '12 inches' },
+            { icon: 'verified', label: 'Professional', value: 'Spa Grade' }
+        ],
+        rating: 4.8,
+        reviews: 67
+    },
+    'loofah-006': {
+        id: 'loofah-006',
+        name: 'Loofah - 006',
+        title: 'Loofah 006 - Product Details | Star Enterprises',
+        sku: 'LOOF-106',
+        badge: 'Standard',
+        badgeColor: 'bg-blue-600',
+        description: 'Compact travel-sized loofah with excellent durability. Perfect for hotel amenities, gym bags, and on-the-go skincare routines without compromising on quality.',
+        mainImage: './002/006 (2).JPG',
+        thumbImages: [
+            './002/006 (2).JPG',
+            './002/006 (3).JPG',
+            './002/006.JPG'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Size Type', value: 'Travel Size' },
+            { icon: 'luggage', label: 'Portability', value: 'Compact' },
+            { icon: 'straighten', label: 'Length', value: '6 inches' },
+            { icon: 'verified', label: 'Hotel Grade', value: 'Yes' }
+        ],
+        rating: 4.5,
+        reviews: 42
+    },
+    'face-mask': {
+        id: 'face-mask',
+        name: 'Face Mask',
+        title: 'Disposable Face Mask - Product Details | Star Enterprises',
+        sku: 'MASK-200',
+        badge: 'Essential',
+        badgeColor: 'bg-gray-600',
+        description: 'Professional disposable face masks designed for spa and salon facial treatments. Made from non-woven fabric with excellent breathability and comfortable ear loops for extended wear during beauty procedures.',
+        mainImage: './002/FACE MASK.jpg',
+        thumbImages: [
+            './002/FACE MASK.jpg',
+            './002/IMG_1610.JPG',
+            './002/IMG_1612.JPG'
+        ],
+        category: 'Spa Essentials',
+        specs: [
+            { icon: 'face', label: 'Type', value: 'Disposable' },
+            { icon: 'filter_alt', label: 'Material', value: 'Non-Woven' },
+            { icon: 'comfort', label: 'Comfort', value: 'Breathable' },
+            { icon: 'verified', label: 'Application', value: 'Facial Treatments' }
+        ],
+        rating: 4.7,
+        reviews: 123
+    },
+    'baby-loofah': {
+        id: 'baby-loofah',
+        name: 'Baby Loofah',
+        title: 'Baby Loofah - Product Details | Star Enterprises',
+        sku: 'LOOF-BABY-50',
+        badge: 'Gentle',
+        badgeColor: 'bg-pink-600',
+        description: 'Extra soft and gentle loofah specially designed for delicate baby skin and sensitive adult skin. Provides the mildest exfoliation possible while maintaining natural loofah benefits.',
+        mainImage: './002/Baby loofah.jpg',
+        thumbImages: [
+            './002/Baby loofah.jpg',
+            './002/IMG_9445.JPG',
+            './002/Baby loofah.jpg'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'child_care', label: 'For', value: 'Baby/Sensitive Skin' },
+            { icon: 'spa', label: 'Texture', value: 'Extra Soft' },
+            { icon: 'straighten', label: 'Size', value: '5 inches' },
+            { icon: 'verified', label: 'Safety', value: 'Hypoallergenic' }
+        ],
+        rating: 4.9,
+        reviews: 89
+    },
+    'grey-terry-slipper': {
+        id: 'grey-terry-slipper',
+        name: 'Grey Terry Slipper',
+        title: 'Grey Terry Slippers - Product Details | Star Enterprises',
+        sku: 'SLIP-GREY-300',
+        badge: 'Luxury',
+        badgeColor: 'bg-gray-700',
+        description: 'Premium grey terry cloth slippers for spa and hotel use. Features plush terry fabric, non-slip soles, and comfortable fit perfect for post-massage relaxation and luxury accommodation amenities.',
+        mainImage: './002/GRAY TERRY SLIPPER.jpg',
+        thumbImages: [
+            './002/GRAY TERRY SLIPPER.jpg',
+            './002/IMG_1669.JPG',
+            './002/IMG_1670.JPG'
+        ],
+        category: 'Footwear',
+        specs: [
+            { icon: 'footprint', label: 'Material', value: 'Terry Cloth' },
+            { icon: 'safety_check', label: 'Sole', value: 'Non-Slip' },
+            { icon: 'hotel', label: 'Use', value: 'Spa & Hotels' },
+            { icon: 'verified', label: 'Quality', value: 'Luxury Grade' }
+        ],
+        rating: 4.8,
+        reviews: 156
+    },
+    'wax-stripes': {
+        id: 'wax-stripes',
+        name: 'Wax Stripes',
+        title: 'Non-Woven Wax Stripes - Product Details | Star Enterprises',
+        sku: 'WAX-400-NW',
+        badge: 'Professional',
+        badgeColor: 'bg-indigo-600',
+        description: 'Professional non-woven disposable wax strips for hair removal. Designed for optimal wax adherence and easy removal, these strips are essential for salon and spa waxing treatments.',
+        mainImage: './002/IMG_1602.JPG',
+        thumbImages: [
+            './002/IMG_1602.JPG',
+            './002/WAXING STRIP.jpg',
+            './002/IMG_1602.JPG'
+        ],
+        category: 'Hair Removal',
+        specs: [
+            { icon: 'content_cut', label: 'Purpose', value: 'Hair Removal' },
+            { icon: 'layers', label: 'Material', value: 'Non-Woven' },
+            { icon: 'package', label: 'Type', value: 'Disposable' },
+            { icon: 'verified', label: 'Professional', value: 'Salon Grade' }
+        ],
+        rating: 4.6,
+        reviews: 234
+    },
+    'disposable-mask': {
+        id: 'disposable-mask',
+        name: 'Disposable Mask',
+        title: 'Disposable Spa Mask - Product Details | Star Enterprises',
+        sku: 'MASK-DISP-250',
+        badge: 'Essential',
+        badgeColor: 'bg-gray-600',
+        description: 'High-quality disposable masks for spa, salon, and hospitality use. Features soft ear loops, three-layer protection, and comfortable fit for extended wear during treatments.',
+        mainImage: './002/IMG_1617.JPG',
+        thumbImages: [
+            './002/IMG_1617.JPG',
+            './002/IMG_1618.JPG',
+            './002/IMG_1617.JPG'
+        ],
+        category: 'Spa Essentials',
+        specs: [
+            { icon: 'medical_mask', label: 'Type', value: '3-Layer' },
+            { icon: 'apartment', label: 'Use', value: 'Spa/Salon/Hotel' },
+            { icon: 'package', label: 'Packaging', value: 'Individual' },
+            { icon: 'verified', label: 'Comfort', value: 'Extended Wear' }
+        ],
+        rating: 4.5,
+        reviews: 189
+    },
+    'lightweight-spa-slippers': {
+        id: 'lightweight-spa-slippers',
+        name: 'Lightweight Spa Slippers',
+        title: 'Lightweight Spa Slippers - Product Details | Star Enterprises',
+        sku: 'SLIP-LIGHT-150',
+        badge: 'Comfort',
+        badgeColor: 'bg-teal-600',
+        description: 'Ultra-lightweight disposable slippers designed for spa massage rooms. Provides temporary footwear solution that is comfortable, hygienic, and perfect for one-time use during treatments.',
+        mainImage: './002/IMG_1639.JPG',
+        thumbImages: [
+            './002/IMG_1639.JPG',
+            './002/IMG_1640.JPG',
+            './002/IMG_1641.JPG'
+        ],
+        category: 'Footwear',
+        specs: [
+            { icon: 'footprint', label: 'Weight', value: 'Ultra Light' },
+            { icon: 'spa', label: 'Use', value: 'Massage Rooms' },
+            { icon: 'package', label: 'Type', value: 'Disposable' },
+            { icon: 'verified', label: 'Hygiene', value: 'Single Use' }
+        ],
+        rating: 4.7,
+        reviews: 112
+    },
+    'non-woven-spa-slippers': {
+        id: 'non-woven-spa-slippers',
+        name: 'Non Woven Spa Slippers',
+        title: 'Non-Woven Spa Slippers - Product Details | Star Enterprises',
+        sku: 'SLIP-NW-180',
+        badge: 'Eco-Friendly',
+        badgeColor: 'bg-green-600',
+        description: 'Eco-friendly non-woven spa slippers that are biodegradable and comfortable. Perfect for environmentally conscious spas and hotels looking for sustainable disposable footwear options.',
+        mainImage: './002/IMG_1666.JPG',
+        thumbImages: [
+            './002/IMG_1666.JPG',
+            './002/IMG_1667.JPG',
+            './002/IMG_1666.JPG'
+        ],
+        category: 'Footwear',
+        specs: [
+            { icon: 'footprint', label: 'Material', value: 'Non-Woven' },
+            { icon: 'recycling', label: 'Eco-Friendly', value: 'Biodegradable' },
+            { icon: 'spa', label: 'Use', value: 'Spa Treatments' },
+            { icon: 'verified', label: 'Sustainability', value: 'Eco-Conscious' }
+        ],
+        rating: 4.8,
+        reviews: 95
+    },
+    'disposable-spa-panty': {
+        id: 'disposable-spa-panty',
+        name: 'Disposable Spa Panty',
+        title: 'Disposable Spa Panty - Product Details | Star Enterprises',
+        sku: 'PANTY-SPA-500',
+        badge: 'Professional',
+        badgeColor: 'bg-pink-600',
+        description: 'Disposable spa panties designed for massage and body treatments. Provides modesty, comfort, and hygiene during spa procedures. Made from soft, breathable material for client comfort.',
+        mainImage: './002/IMG_9741.JPEG',
+        thumbImages: [
+            './002/IMG_9741.JPEG',
+            './002/IMG_9743.JPEG',
+            './002/IMG_9744.JPEG'
+        ],
+        category: 'Spa Wear',
+        specs: [
+            { icon: 'checkroom', label: 'Type', value: 'Disposable' },
+            { icon: 'spa', label: 'Use', value: 'Massage/Body Treatments' },
+            { icon: 'spa', label: 'Use', value: 'Massage/Body Treatments' },
+            { icon: 'verified', label: 'Hygiene', value: 'Single Use' }
+        ],
+        rating: 4.9,
+        reviews: 167
+    },
+    'disposable-cutting-apron': {
+        id: 'disposable-cutting-apron',
+        name: 'Disposable Cutting Apron',
+        title: 'Disposable Cutting Apron - Product Details | Star Enterprises',
+        sku: 'APRON-CUT-600',
+        badge: 'Professional',
+        badgeColor: 'bg-blue-600',
+        description: 'Professional disposable cutting aprons specifically designed for hair salons. Protects clothing from hair clippings, colors, and chemicals while maintaining a clean, professional appearance.',
+        mainImage: './002/IMG_9804 - Copy.JPG',
+        thumbImages: [
+            './002/IMG_9819 - Copy.JPEG',
+            './002/IMG_9808.JPEG',
+            './002/IMG_9818.JPEG'
+        ],
+        category: 'Salon Wear',
+        specs: [
+            { icon: 'checkroom', label: 'Type', value: 'Cutting Apron' },
+            { icon: 'cut', label: 'Purpose', value: 'Hair Salon' },
+            { icon: 'shield', label: 'Protection', value: 'Hair & Chemicals' },
+            { icon: 'verified', label: 'Professional', value: 'Salon Grade' }
+        ],
+        rating: 4.7,
+        reviews: 89
+    },
+    'disposable-bermuda': {
+        id: 'disposable-bermuda',
+        name: 'Disposable Bermuda',
+        title: 'Disposable Bermuda - Product Details | Star Enterprises',
+        sku: 'BERMUDA-SPA-700',
+        badge: 'Specialized',
+        badgeColor: 'bg-blue-600',
+        description: 'Disposable bermuda shorts designed for spa treatments requiring modesty and comfort. Ideal for body wraps, scrubs, and massage treatments where traditional spa wear is preferred.',
+        mainImage: './002/IMG_9769 - Copy.JPEG',
+        thumbImages: [
+            './002/IMG_9769 - Copy.JPEG',
+            './002/IMG_9771 - Copy.JPEG',
+            './002/IMG_9769 - Copy.JPEG'
+        ],
+        category: 'Spa Wear',
+        specs: [
+            { icon: 'checkroom', label: 'Type', value: 'Bermuda Shorts' },
+            { icon: 'spa', label: 'Use', value: 'Body Treatments' },
+            { icon: 'checkroom', label: 'Type', value: 'Bermuda Shorts' },
+            { icon: 'verified', label: 'Modesty', value: 'Full Coverage' }
+        ],
+        rating: 4.8,
+        reviews: 76
+    },
+    'disposable-gown': {
+        id: 'disposable-gown',
+        name: 'Disposable Gown',
+        title: 'Disposable Gown - Product Details | Star Enterprises',
+        sku: 'GOWN-SPA-800',
+        badge: 'Essential',
+        badgeColor: 'bg-gray-600',
+        description: 'Disposable gowns available in multiple colors for spa and salon use. Provides full coverage and comfort during various beauty treatments while maintaining hygiene and professionalism.',
+        mainImage: './002/IMG_9827 - Copy.JPEG',
+        thumbImages: [
+            './002/IMG_9827 - Copy.JPEG',
+            './002/IMG_9829 - Copy.JPEG',
+            './002/IMG_9831 - Copy.JPEG'
+        ],
+        category: 'Spa Wear',
+        specs: [
+            { icon: 'checkroom', label: 'Type', value: 'Disposable Gown' },
+            { icon: 'palette', label: 'Colors', value: 'Multiple Options' },
+            { icon: 'spa', label: 'Use', value: 'Spa & Salon' },
+            { icon: 'verified', label: 'Coverage', value: 'Full Body' }
+        ],
+        rating: 4.7,
+        reviews: 134
+    },
+    'oval-loofah': {
+        id: 'oval-loofah',
+        name: 'Oval Loofah',
+        title: 'Oval Loofah - Product Details | Star Enterprises',
+        sku: 'LOOF-OVAL-110',
+        badge: 'Ergonomic',
+        badgeColor: 'bg-purple-600',
+        description: 'Ergonomically designed oval-shaped loofah that fits perfectly in hand for comfortable use. The unique shape provides better grip and control during exfoliation and massage treatments.',
+        mainImage: './002/Oval Loofah.jpg',
+        thumbImages: [
+            './002/Oval Loofah.jpg',
+            './002/Oval Loofah.jpg',
+            './002/Oval Loofah.jpg'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Shape', value: 'Oval' },
+            { icon: 'straighten', label: 'Dimensions', value: '4x6 inches' },
+            { icon: 'straighten', label: 'Dimensions', value: '4x6 inches' },
+            { icon: 'verified', label: 'Control', value: 'Enhanced' }
+        ],
+        rating: 4.8,
+        reviews: 63
+    },
+    'round-loofah': {
+        id: 'round-loofah',
+        name: 'Round Loofah',
+        title: 'Round Loofah - Product Details | Star Enterprises',
+        sku: 'LOOF-ROUND-120',
+        badge: 'Classic',
+        badgeColor: 'bg-blue-600',
+        description: 'Classic round loofah with uniform texture throughout. Perfect for circular massage motions and traditional spa treatments. The circular shape allows for even pressure distribution.',
+        mainImage: './002/Round loofah004.jpg',
+        thumbImages: [
+            './002/Round loofah004.jpg',
+            './002/Round loofah.jpg',
+            './002/round l.jpg'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Shape', value: 'Round' },
+            { icon: '360', label: 'Texture', value: 'Uniform' },
+            { icon: 'straighten', label: 'Diameter', value: '5 inches' },
+            { icon: 'verified', label: 'Massage', value: 'Circular Motion' }
+        ],
+        rating: 4.7,
+        reviews: 58
+    },
+    'shower-cap': {
+        id: 'shower-cap',
+        name: 'Shower Cap',
+        title: 'Shower Cap - Product Details | Star Enterprises',
+        sku: 'CAP-SHOWER-900',
+        badge: 'Dual Type',
+        badgeColor: 'bg-indigo-600',
+        description: 'Available in both plastic and non-woven materials, these shower caps protect hair during spa treatments, showers, and beauty procedures. Features elastic band for secure fit and full coverage.',
+        mainImage: './002/shower cap.JPG',
+        thumbImages: [
+            './002/shower cap.JPG',
+            './002/shower cap.JPG',
+            './002/shower cap.JPG'
+        ],
+        category: 'Spa Essentials',
+        specs: [
+            { icon: 'shower', label: 'Types', value: 'Plastic & Non-Woven' },
+            { icon: 'face', label: 'Purpose', value: 'Hair Protection' },
+            { icon: 'package', label: 'Material Options', value: '2 Types' },
+            { icon: 'verified', label: 'Fit', value: 'Elastic Band' }
+        ],
+        rating: 4.6,
+        reviews: 142
+    },
+    'terry-slipper': {
+        id: 'terry-slipper',
+        name: 'Terry Slipper',
+        title: 'Terry Slipper - Product Details | Star Enterprises',
+        sku: 'SLIP-TERRY-350',
+        badge: 'Luxury Hotel',
+        badgeColor: 'bg-amber-600',
+        description: 'Premium terry cloth slippers primarily used in 5-star hotels and luxury spas. Features plush fabric, reinforced soles, and superior comfort for guest amenities and high-end establishments.',
+        mainImage: './002/terry slipper.jpg',
+        thumbImages: [
+            './002/terry slipper.jpg',
+            './002/terry slipper.jpg',
+            './002/terry slipper.jpg'
+        ],
+        category: 'Footwear',
+        specs: [
+            { icon: 'star', label: 'Grade', value: '5-Star Hotel' },
+            { icon: 'footprint', label: 'Material', value: 'Premium Terry' },
+            { icon: 'hotel', label: 'Primary Use', value: 'Luxury Hotels' },
+            { icon: 'verified', label: 'Quality', value: 'Premium' }
+        ],
+        rating: 4.9,
+        reviews: 201
+    },
+    'white-loofah': {
+        id: 'white-loofah',
+        name: 'White Loofah',
+        title: 'White Loofah - Product Details | Star Enterprises',
+        sku: 'LOOF-WHITE-130',
+        badge: 'Premium',
+        badgeColor: 'bg-gray-600',
+        description: 'Premium white natural loofah with consistent texture and superior quality. The light color makes it easy to monitor cleanliness, making it ideal for professional spa environments.',
+        mainImage: './002/white loofah.jpg',
+        thumbImages: [
+            './002/white loofah.jpg',
+            './002/white loofah.jpg',
+            './002/white loofah.jpg'
+        ],
+        category: 'Bath & Spa',
+        specs: [
+            { icon: 'spa', label: 'Color', value: 'White' },
+            { icon: 'visibility', label: 'Visibility', value: 'Easy Clean Monitor' },
+            { icon: 'straighten', label: 'Size', value: '8-9 inches' },
+            { icon: 'verified', label: 'Quality', value: 'Premium Grade' }
+        ],
+        rating: 4.8,
+        reviews: 77
+    }
+};
+
+// Function to load product based on URL parameter
+function loadProduct() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('product') || 'natural-loofah';
+    const product = products[productId] || products['natural-loofah'];
+    
+    // Update page title
+    document.title = product.title;
+    document.getElementById('product-title').textContent = product.title;
+    
+    // Update breadcrumb
+    document.getElementById('breadcrumb-product').textContent = product.name;
+    
+    // Update product badge
+    const badgeElement = document.getElementById('product-badge');
+    badgeElement.textContent = product.badge;
+    badgeElement.className = `${product.badgeColor} text-white px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider`;
+    
+    // Update SKU
+    document.getElementById('product-sku').textContent = `SKU: ${product.sku}`;
+    
+    // Update product name
+    document.getElementById('product-name').textContent = product.name;
+    
+    // Update product description
+    document.getElementById('product-description').textContent = product.description;
+    
+    // Update main image
+    document.getElementById('main-image').style.backgroundImage = `url('${product.mainImage}')`;
+    document.getElementById('main-image').setAttribute('data-alt', product.name);
+    
+    // Update thumbnail images
+    const thumbnails = document.querySelectorAll('.grid.grid-cols-4.gap-4 .aspect-square');
+    if (thumbnails.length >= 3) {
+        thumbnails[0].querySelector('.bg-center').style.backgroundImage = `url('${product.thumbImages[0]}')`;
+        thumbnails[1].querySelector('.bg-center').style.backgroundImage = `url('${product.thumbImages[1]}')`;
+        thumbnails[2].querySelector('.bg-center').style.backgroundImage = `url('${product.thumbImages[2]}')`;
+    }
+    
+    // Update specs
+    const specsContainer = document.getElementById('product-specs');
+    specsContainer.innerHTML = '';
+    product.specs.forEach(spec => {
+        const specHTML = `
+        <div class="flex items-center gap-3">
+            <div class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">${spec.icon}</span>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xs text-[#4c739a]">${spec.label}</span>
+                <span class="text-sm font-semibold dark:text-white">${spec.value}</span>
+            </div>
+        </div>
+        `;
+        specsContainer.innerHTML += specHTML;
+    });
+    
+    // Update rating
+    const ratingElement = document.querySelector('.text-[#0d141b].dark\\:text-gray-300.text-sm');
+    if (ratingElement) {
+        ratingElement.textContent = `${product.rating} (${product.reviews} reviews)`;
+    }
+}
+
+// Load product when page loads
+document.addEventListener('DOMContentLoaded', loadProduct);
+</script>
+</body>
+</html>

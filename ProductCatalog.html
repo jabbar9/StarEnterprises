@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Catalog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="ProductDetails.html">
+<link rel="stylesheet" href="ContactUs.html">
+<link rel="stylesheet" href="AboutUs.html">
+<link rel="stylesheet" href="Home.html">
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-100 flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] dark:border-slate-700 bg-white dark:bg-slate-900 px-10 py-3 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl fill-current">star</span>
+</div>
+<h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Star Enterprises</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Home.html">Home</a>
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="AboutUs.html">About Us</a>
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="ContactUs.html">Contact</a>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] transition-colors">
+    <a href="ContactUs.html">
+<span class="truncate">Partner Portal</span>
+</a>
+</button>
+
+<button class="md:hidden text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- <div class="bg-white dark:bg-slate-900 border-b border-[#e7edf3] dark:border-slate-700">
+<div class="max-w-[1440px] mx-auto px-4 md:px-8 py-10">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined fill-current text-xl">star</span>
+<span class="text-sm font-bold uppercase tracking-wider">Star Enterprises</span>
+</div>
+<h1 class="text-3xl md:text-4xl font-black text-[#0d141b] dark:text-white tracking-tight">Product Catalog</h1>
+<p class="text-[#4c739a] text-lg max-w-2xl mt-1">
+                Explore our comprehensive collection of high-performance solutions designed for modern enterprise.
+            </p>
+</div>
+</div>
+</div> -->
+<div class="flex-1 w-full max-w-[1440px] mx-auto px-4 md:px-8 py-8 flex flex-col gap-8">
+<div class="flex flex-wrap gap-2 text-sm">
+<a class="text-[#4c739a] font-medium leading-normal hover:text-primary hover:underline" href="#">Home</a>
+<span class="text-[#4c739a] font-medium leading-normal">/</span>
+<a class="text-[#4c739a] font-medium leading-normal hover:text-primary hover:underline" href="#">Catalog</a>
+<span class="text-[#4c739a] font-medium leading-normal">/</span>
+<span class="text-[#0d141b] dark:text-slate-200 font-medium leading-normal">All Products</span>
+</div>
+<section>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+  <!-- Loofah -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">spa</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Loofah</span>
+  </a>
+
+  <!-- Slippers -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">footprint</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Sleepers</span>
+  </a>
+
+  <!-- Aprons (Dress-style icon) -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">checkroom</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Aprons</span>
+  </a>
+
+  <!-- Gowns (Different dress-style icon) -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">styler</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Gowns</span>
+  </a>
+
+  <!-- Mobile -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">content_cut</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Wax Stripes</span>
+  </a>
+
+  <!-- Panty -->
+  <a class="group flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-white dark:bg-slate-800 border border-[#e7edf3] dark:border-slate-700 hover:border-primary hover:shadow-lg transition-all duration-300" href="#">
+    <div class="h-12 w-12 rounded-full bg-blue-50 dark:bg-slate-700 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+      <span class="material-symbols-outlined text-2xl">checkroom</span>
+    </div>
+    <span class="font-bold text-sm text-[#0d141b] dark:text-white group-hover:text-primary transition-colors">Panty</span>
+  </a>
+
+</div>
+
+</section>
+<main class="flex-1 flex flex-col gap-6">
+<div class="flex flex-col md:flex-row gap-4 items-center justify-between bg-white dark:bg-slate-800 p-4 rounded-lg border border-[#e7edf3] dark:border-slate-700 shadow-sm">
+<div class="w-full md:max-w-md">
+<div class="flex w-full items-stretch rounded-lg h-10 md:h-12 bg-[#e7edf3] dark:bg-slate-700">
+<div class="text-[#4c739a] flex items-center justify-center pl-4 pr-2">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full bg-transparent border-none text-[#0d141b] dark:text-white placeholder:text-[#4c739a] focus:ring-0 text-base" placeholder="Search by name, SKU, or keyword..."/>
+</div>
+</div>
+<div class="flex items-center gap-3 w-full md:w-auto">
+<span class="whitespace-nowrap text-[#4c739a] dark:text-slate-400 font-medium text-sm hidden sm:block">Sort By:</span>
+<select class="form-select block w-full md:w-48 rounded-lg border-[#e7edf3] dark:border-slate-600 bg-white dark:bg-slate-700 text-[#0d141b] dark:text-white focus:border-primary focus:ring-primary h-10 md:h-12 text-sm font-medium">
+<option>Relevance</option>
+<option>Name (A-Z)</option>
+<option>Newest First</option>
+</select>
+<div class="flex rounded-lg border border-[#e7edf3] dark:border-slate-600 overflow-hidden h-10 md:h-12 shrink-0">
+<button class="bg-primary/10 text-primary w-10 md:w-12 flex items-center justify-center hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+</button>
+<div class="w-px bg-[#e7edf3] dark:bg-slate-600"></div>
+<button class="bg-white dark:bg-slate-700 text-[#4c739a] w-10 md:w-12 flex items-center justify-center hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors">
+<span class="material-symbols-outlined text-[20px]">view_list</span>
+</button>
+</div>
+</div>
+</div>
+<!-- <div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
+                        Networking
+                        <button class="hover:text-blue-800"><span class="material-symbols-outlined text-[16px] align-middle">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm font-medium border border-slate-300 dark:border-slate-600">
+                        In Stock
+                        <button class="hover:text-slate-900 dark:hover:text-white"><span class="material-symbols-outlined text-[16px] align-middle">close</span></button>
+</span>
+<button class="text-sm text-[#4c739a] hover:text-primary underline ml-2">Clear all</button>
+</div> -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+
+<a href="ProductDetails.html?product=natural-loofah"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/Natural Loofah.png"
+         alt="Natural Loofah">
+    <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div>
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Natural Loofah
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-001"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/001 (2).JPG"
+         alt="Natural Loofah">
+    <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div>
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Loofah - 001
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-002"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/002.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Loofah - 002
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-003"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/003.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Loofah - 003
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-004"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/004 (3).JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+       Loofah - 004
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-005"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/005 (2).JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Loofah - 005
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=loofah-006"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/006 (2).JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Loofah - 006
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=face-mask"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/FACE MASK.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Face Mask
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Fask Mask Used in Spa's and Salon for Facial Purpose.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=baby-loofah"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/Baby loofah.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Baby Loofah
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=grey-terry-slipper"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/GRAY TERRY SLIPPER.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Grey Terry Slipper
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Disposable Spa Slippers Used after Massages
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=wax-stripes"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_1602.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Wax Stripes
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Non-Woven Disposable Wax Stripes used for hair removal purpose.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=disposable-mask"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_1617.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Disposable Mask
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Disposable Mask for Spa, Salon and hospitality.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=lightweight-spa-slippers"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_1639.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      lighweight Spa Slippers
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Spa Slippers used in Spa's for massages.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=non-woven-spa-slippers"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_1666.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Non Woven Spa Slippers
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Spa Slippers used in Spa's for massages.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=disposable-spa-panty"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_9741.JPEG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Disposable Spa Panty
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Disposable Spa Panty for Massage.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=disposable-cutting-apron"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_9804 - Copy.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Disposable Cutting Apron
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Cutting Aprons Specially Used in Salons.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+<a href="ProductDetails.html?product=disposable-bermuda"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_9769 - Copy.JPEG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Disposable Bermuda
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      A Spa Product also for massage purpose
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+<a href="ProductDetails.html?product=disposable-gown"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/IMG_9827 - Copy.JPEG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Disposable Gown
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Gown is used in spa and it comes in few different colors
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+<a href="ProductDetails.html?product=oval-loofah"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="002/Oval Loofah.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Oval Loofah
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+<a href="ProductDetails.html?product=round-loofah"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/Round loofah004.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Round Loofah
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+
+<a href="ProductDetails.html?product=shower-cap"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/shower cap.JPG"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Shower Cap
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      There are 2 types of shower caps one in plastic and other one in Non Woven.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+<a href="ProductDetails.html?product=terry-slipper"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/terry slipper.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      Terry Slipper
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      Terry Slippers mostly Used in 5 Star hotels.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+<a href="ProductDetails.html?product=white-loofah"
+   class="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-[#e7edf3] dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+  
+  <div class="aspect-[4/3] relative overflow-hidden bg-slate-100 dark:bg-slate-900">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+         src="./002/white loofah.jpg"
+         alt="Natural Loofah">
+    <!-- <div class="absolute top-3 left-3 flex gap-2">
+      <span class="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-sm uppercase tracking-wide">Best Seller</span>
+    </div> -->
+  </div>
+  
+  <div class="p-5 flex flex-col gap-3 flex-1">
+    <div class="flex justify-between items-start">
+      <span class="text-xs font-medium text-[#4c739a] bg-slate-100 dark:bg-slate-700 px-2 py-0.5 rounded">SKU: LOOF-100-NAT</span>
+    </div>
+    <h3 class="text-lg font-bold text-[#0d141b] dark:text-white leading-tight group-hover:text-primary transition-colors">
+      White Loofah
+    </h3>
+    <p class="text-sm text-[#4c739a] line-clamp-2">
+      100% natural loofah for salons & spas. Eco-friendly, durable, and perfect for professional use.
+    </p>
+    <div class="mt-auto pt-4 flex items-center justify-between border-t border-[#e7edf3] dark:border-slate-700">
+      <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Bath & Spa</span>
+      <span class="text-primary text-sm font-bold flex items-center gap-1 hover:gap-2 transition-all">
+        View Details <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </span>
+    </div>
+  </div>
+</a>
+
+
+</div>
+
+</main>
+</div>
+<footer class="bg-white dark:bg-slate-900 border-t border-[#e7edf3] dark:border-slate-700 py-12 px-10 mt-auto">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between gap-8">
+<div class="flex flex-col gap-4 max-w-sm">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-3xl fill-current">star</span>
+<h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight">Star Enterprises</h2>
+</div>
+<p class="text-[#4c739a] text-sm leading-relaxed">
+                    Star Enterprises is your premier source for detailed product specifications, technical documents, and compatibility information for enterprise hardware.
+                </p>
+</div>
+<div class="flex flex-wrap gap-12">
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0d141b] dark:text-white">Product Categories</h4>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Networking</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Workstations</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Security</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Servers</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-[#0d141b] dark:text-white">Support</h4>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Warranty Info</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Driver Downloads</a>
+<a class="text-[#4c739a] text-sm hover:text-primary transition-colors" href="#">Contact Us</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto pt-8 mt-8 border-t border-[#e7edf3] dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[#4c739a] text-sm">© 2024 Star Enterprises. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-[#4c739a] hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#4c739a] hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

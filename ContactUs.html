@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link rel="stylesheet" href="ProductCatalog.html">
+<link rel="stylesheet" href="ProductDetails.html">
+<link rel="stylesheet" href="Home.html">
+<link rel="stylesheet" href="AboutUs.html">
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d141b] dark:text-slate-50 min-h-screen flex flex-col">
+<!-- Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] dark:border-b-slate-800 px-10 py-3 bg-white dark:bg-[#111a22]">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#0d141b] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<h2 class="font-display text-xl font-bold tracking-tight text-slate-900 dark:text-white">Star Enterprises</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="ProductCatalog.html">Products</a>
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="AboutUs.html">About</a>
+<a class="text-[#0d141b] dark:text-slate-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="Home.html">Home</a>
+
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#4c739a] flex border-none bg-[#e7edf3] dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0d141b] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#e7edf3] dark:bg-slate-800 focus:border-none h-full placeholder:text-[#4c739a] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search products..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+    <a href="Home.html">
+<span class="truncate">Sign In</span>
+</a>
+</button>
+</div>
+</header>
+<!-- Main Content Wrapper -->
+<main class="flex-1 flex flex-col items-center w-full px-4 md:px-10 py-8 md:py-12">
+<div class="max-w-7xl w-full flex flex-col gap-10">
+<!-- Hero Section (Subtle) -->
+<div class="text-center space-y-4 max-w-3xl mx-auto">
+<h1 class="text-[#0d141b] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">
+                    Contact Us
+                </h1>
+<p class="text-[#4c739a] dark:text-slate-400 text-lg font-normal leading-normal">
+                    Have a question about our products? We'd love to hear from you. Our team is ready to answer all your inquiries.
+                </p>
+</div>
+<!-- Content Grid: Left (Info) & Right (Form) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full mt-4">
+<!-- Left Column: Contact Information -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Info Card -->
+<div class="bg-white dark:bg-[#111a22] rounded-xl p-8 shadow-sm border border-[#e7edf3] dark:border-slate-800">
+<h3 class="text-[#0d141b] dark:text-white tracking-light text-2xl font-bold leading-tight pb-6 border-b border-[#e7edf3] dark:border-slate-700 mb-6">
+                            Get in Touch
+                        </h3>
+<div class="space-y-6">
+<!-- Email -->
+<div class="flex gap-4 items-start group cursor-pointer">
+<div class="bg-primary/10 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-medium mb-1">Email</p>
+<p class="text-[#0d141b] dark:text-white text-base font-semibold">support@starenterprises.com</p>
+<p class="text-xs text-[#4c739a] mt-1">We usually reply within 24 hours</p>
+</div>
+</div>
+<!-- Phone -->
+<div class="flex gap-4 items-start group cursor-pointer">
+<div class="bg-primary/10 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-medium mb-1">Phone</p>
+<p class="text-[#0d141b] dark:text-white text-base font-semibold">+91 99679 37871</p>
+<p class="text-xs text-[#4c739a] mt-1">30 Days, 9am - 9pm PST</p>
+</div>
+</div>
+<!-- Address -->
+<div class="flex gap-4 items-start group cursor-pointer">
+<div class="bg-primary/10 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-medium mb-1">Office</p>
+<p class="text-[#0d141b] dark:text-white text-base font-semibold">Kurla East Near Jogani Indl Estate, Mumbai 400070</p>
+</div>
+</div>
+</div>
+<!-- Socials -->
+<div class="mt-8 pt-6 border-t border-[#e7edf3] dark:border-slate-700">
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-medium mb-4">Follow us</p>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-full bg-[#f0f4f8] dark:bg-slate-800 flex items-center justify-center text-[#4c739a] hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-[#f0f4f8] dark:bg-slate-800 flex items-center justify-center text-[#4c739a] hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+</a>
+<a class="w-10 h-10 rounded-full bg-[#f0f4f8] dark:bg-slate-800 flex items-center justify-center text-[#4c739a] hover:bg-primary hover:text-white transition-all" href="#">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692 1.102 0 1.681.081 1.971.121v2.879z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<!-- Map Preview -->
+<div class="h-64 w-full rounded-xl overflow-hidden shadow-sm border border-[#e7edf3] dark:border-slate-800 relative bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Minimalist map preview of Tech City location" data-location="Tech City, CA" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAj6cwoxAoZm9c9CZrTw5tDK55xXQ4dCp7Oqr3XMD_tTdgAG6Nc_U6Ns7vlTtxZL29hRi2lq79mbRdm7A1EVTe_RMBoIjztyfpO7u-FtE5Qmzg8cQeLwuADxMjun1GKbmDe1ZT1oAqxMESIBAiyBSel2K0ry3lhdHYTKz0hMDPzXbRL90cFc_xtF6gvwyMyiU5R4cr5rrErFcQsoni0jDP2Q5eDcfl2Ag2csMOXD8lsjhW_KeUYRLmqzXptxAsBCIdcmkphhSJ5Fzc');"></div>
+<div class="absolute bottom-4 left-4">
+<a class="bg-white dark:bg-slate-800 dark:text-white text-xs font-bold px-3 py-2 rounded shadow-md hover:bg-gray-50 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+                                Open in Google Maps
+                             </a>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-white dark:bg-[#111a22] rounded-xl p-8 md:p-10 shadow-sm border border-[#e7edf3] dark:border-slate-800 h-full">
+<div class="mb-8">
+<h2 class="text-[#0d141b] dark:text-white text-2xl font-bold leading-tight">Send us a Message</h2>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm mt-2">Fill out the form below and we'll get back to you as soon as possible.</p>
+</div>
+<form class="flex flex-col gap-6">
+<!-- Name & Email Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-semibold" for="name">Full Name</label>
+<input class="rounded-lg bg-[#f0f4f8] dark:bg-slate-900 border-transparent focus:border-primary focus:bg-white dark:focus:bg-slate-950 focus:ring-0 text-[#0d141b] dark:text-white px-4 py-3 text-sm transition-all" id="name" placeholder="Enter your full name" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-semibold" for="email">Email Address</label>
+<input class="rounded-lg bg-[#f0f4f8] dark:bg-slate-900 border-transparent focus:border-primary focus:bg-white dark:focus:bg-slate-950 focus:ring-0 text-[#0d141b] dark:text-white px-4 py-3 text-sm transition-all" id="email" placeholder="you@company.com" type="email"/>
+</div>
+</div>
+<!-- Subject Dropdown -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-semibold" for="subject">What are you interested in?</label>
+<div class="relative">
+<select class="w-full appearance-none rounded-lg bg-[#f0f4f8] dark:bg-slate-900 border-transparent focus:border-primary focus:bg-white dark:focus:bg-slate-950 focus:ring-0 text-[#0d141b] dark:text-white px-4 py-3 text-sm transition-all cursor-pointer" id="subject">
+<option disabled="" selected="" value="">Select a topic</option>
+<option value="product">Product Information</option>
+<option value="partnership">Partnership Opportunities</option>
+<option value="support">Technical Support</option>
+<option value="other">General Inquiry</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#4c739a]">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message Textarea -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-semibold" for="message">Your Message</label>
+<textarea class="rounded-lg bg-[#f0f4f8] dark:bg-slate-900 border-transparent focus:border-primary focus:bg-white dark:focus:bg-slate-950 focus:ring-0 text-[#0d141b] dark:text-white px-4 py-3 text-sm resize-none transition-all" id="message" placeholder="How can we help you?" rows="6"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="pt-2">
+<button class="w-full md:w-auto bg-primary hover:bg-blue-600 text-white font-bold py-3.5 px-8 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" type="button">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-sm font-bold">send</span>
+</button>
+</div>
+</form>
+<!-- FAQ Link -->
+<div class="mt-8 pt-6 border-t border-[#e7edf3] dark:border-slate-700 text-center md:text-left">
+<p class="text-sm text-[#4c739a] dark:text-slate-400">
+                                Looking for quick answers? <a class="text-primary font-semibold hover:underline" href="#">Check out our FAQ page</a>.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ Teaser Section -->
+<div class="w-full mt-12 mb-8">
+<div class="bg-primary/5 dark:bg-slate-800/50 border border-primary/10 dark:border-slate-700 rounded-xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div>
+<h3 class="text-xl font-bold text-[#0d141b] dark:text-white mb-2">Frequently Asked Questions</h3>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm max-w-xl">Find answers to common questions about product specifications, warranty, and more in our dedicated help center.</p>
+</div>
+<a class="whitespace-nowrap bg-white dark:bg-slate-700 dark:text-white border border-[#e7edf3] dark:border-slate-600 px-6 py-3 rounded-lg text-sm font-bold text-[#0d141b] hover:bg-gray-50 dark:hover:bg-slate-600 transition-colors shadow-sm" href="#">
+                        Visit Help Center
+                    </a>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#111a22] border-t border-[#e7edf3] dark:border-slate-800 py-12 px-10">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-10">
+<div class="flex flex-col gap-4 max-w-xs">
+<div class="flex items-center gap-2 text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="font-display text-lg font-bold text-slate-900 dark:text-white">Star Enterprises</span>
+</div>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm leading-relaxed">
+                    Showcasing innovation through modern product design. Connect with us to learn more.
+                </p>
+<div class="flex gap-4 mt-2">
+<span class="material-symbols-outlined text-[#4c739a] hover:text-primary cursor-pointer">public</span>
+<span class="material-symbols-outlined text-[#4c739a] hover:text-primary cursor-pointer">chat_bubble</span>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-10">
+<div class="flex flex-col gap-3">
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm">Product</h4>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Features</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Integrations</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Showcase</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm">Company</h4>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">About Us</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Careers</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Blog</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-[#0d141b] dark:text-white font-bold text-sm">Support</h4>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Help Center</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Contact</a>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm hover:text-primary" href="#">Status</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-[#e7edf3] dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[#4c739a] dark:text-slate-500">
+<p>© 2026 Star Enterprises Inc. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-[#0d141b] dark:hover:text-slate-300" href="#">Privacy Policy</a>
+<a class="hover:text-[#0d141b] dark:hover:text-slate-300" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
+
+<!-- href="ProductDetails.html?product=non-woven-spa-slippers" -->
